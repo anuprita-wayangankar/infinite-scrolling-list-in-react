@@ -68,14 +68,14 @@ export default function Login() {
                 <div className='form'>
                     <div className='form-input'>
                         <label> Username </label>
-                        <input type="name" placeholder='Enter your name' value={formValues.name} name="name" onChange={handleUserInput}></input>
+                        <input type="name" autoComplete='off' placeholder='Enter your name' value={formValues.name} name="name" onChange={handleUserInput}></input>
                     </div>
                     <div className="panel panel-default">
                         <FormErrors formErrors={formErrors} fieldKey={"name"} />
                     </div>
                     <div className='form-input'>
                         <label> Password </label>
-                        <input placeholder='Enter password' name="password" value={formValues.password} type="text" onChange={handleUserInput}></input>
+                        <input placeholder='Enter password' autoComplete='off' name="password" value={formValues.password} type="text" onChange={handleUserInput}></input>
                     </div>
                     <div className="panel panel-default">
                         <FormErrors formErrors={formErrors} fieldKey={"password"} />
