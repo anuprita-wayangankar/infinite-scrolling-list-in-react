@@ -7,6 +7,8 @@ import {
 
 import Login from './lib/pages/Login/Login.jsx';
 import Home from './lib/pages/Home/Home.jsx';
+import NotFound from './lib/pages/NotFound/NotFound.jsx';
+
 
 export default () => {
     return (
@@ -14,6 +16,7 @@ export default () => {
             <Routes>
                 <Route exact path='/' element={<Login/>}/>
                 <Route exact path='/home' element={<Home />} />                
+                <Route component={<NotFound />} />
             </Routes>
         </Router>
     )
